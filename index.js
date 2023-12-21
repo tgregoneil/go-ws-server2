@@ -1,4 +1,5 @@
-// ws-server2.js
+#!/usr/local/bin/node
+// index.js    go-ws-server2
 
 module.exports = function (p0) {
     // mandatory p0: {port, initConnection, fromClient, wsc, isSecure, privkeyFileName, certFileName}
@@ -112,7 +113,7 @@ cb.initConnection = (ws, req) => {
     v.ws = ws;
     ws.on('message', function message(msg) {
 
-        v.log('ws-server2.js:  incoming');
+        v.log('go-ws-server2:  incoming');
 //        const msgS = msg.toString();
 //        const msgO = JSON.parse(msgS);
 
